@@ -7,3 +7,7 @@ echo "✓"
 printenv
 for i in $(seq 1 10); do echo "$i"; sleep 1; done; echo
 echo "Done."
+echo
+echo "Now doing a composer install"
+
+composer --no-interaction install --ignore-platform-reqs
